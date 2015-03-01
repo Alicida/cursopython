@@ -1,0 +1,29 @@
+#! /usr/bin/python
+# -*- coding: utf-8 -*-
+
+import math
+
+
+class forma(object):
+
+    def __init__(self):
+        pass
+
+    def superficie(self):
+        pass
+
+    def perimetro(self):
+        pass
+
+
+class circulo(forma):
+    radio = 1
+
+    def __init__(self, radio):
+        self.radio = radio
+
+    def superficie(self):
+        return math.pi * self.radio ** 2
+
+    def perimetro(self):
+        return math.pi * 2 * self.radio
